@@ -15,7 +15,7 @@ namespace Assignment4.Entities
         
         [Required]
         public enum State {
-            Few,
+            New,
             Active,
             Resolved,
             Closed,

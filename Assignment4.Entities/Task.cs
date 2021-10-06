@@ -1,3 +1,10 @@
+using System.Collections.Generic;
+using System;
+using System.ComponentModel.DataAnnotations;
+using Assignment4.Core;
+
+
+
 namespace Assignment4.Entities
 {
     public class Task
@@ -13,23 +20,8 @@ namespace Assignment4.Entities
         [MaxLength]
         public string? Description {get; set;}
         
-        [Required]
-        public enum State {
-            New,
-            Active,
-            Resolved,
-            Closed,
-            Removed
-        }
+        public State State {get; set; }
 
         public ICollection<Tag> Tags {get; set;}
     }
-
-    protected override void OnModelCreating(ModelBuilder modelBuilder){
-        modelBuilder
-            .Entity<Task>()
-            .Property(e => e.State)
-            .HasConversion<string>();
-    }
-
 }

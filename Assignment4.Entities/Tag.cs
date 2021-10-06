@@ -1,4 +1,8 @@
+
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using Assignment4.Core;
 
 namespace Assignment4.Entities
 {
@@ -7,7 +11,6 @@ namespace Assignment4.Entities
         public int Id { get; set; }
 
         [Required(AllowEmptyStrings = false)]
-        [IsUnique("Name")]
         public string Name { get; set; }
 
         public ICollection<Task> Tasks { get; set; }

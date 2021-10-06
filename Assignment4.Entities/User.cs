@@ -1,3 +1,10 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using Assignment4.Core;
+
+
+
 namespace Assignment4.Entities
 {
     public class User
@@ -9,10 +16,7 @@ namespace Assignment4.Entities
         public string Name {get; set;}
 
         [Required]
-        [Unique("Email")]
         [StringLength(100)]
         public string Email {get; set;}
-
-        public List<User<Task>> Tasks {get; set;}
     }
 }

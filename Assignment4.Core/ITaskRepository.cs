@@ -18,6 +18,8 @@ namespace Assignment4.Core
 
         TaskDetailsDTO FindById(int id);
 
-        void Update(TaskDTO task);
+        Response Update(TaskUpdateDTO task);
+
+        Response Delete(TaskUpdateDTO task);
     }
 }

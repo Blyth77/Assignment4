@@ -17,7 +17,7 @@ namespace Assignment4.Entities
 
         public User? AssignedTo {get; set;}
 
-        [MaxLength]
+        [MaxLength(50)]
         public string? Description {get; set;}
         
         public State State {get; set; }

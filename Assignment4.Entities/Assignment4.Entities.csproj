@@ -2,14 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <NullableReferenceTypes>true</NullableReferenceTypes>
   </PropertyGroup>
+
+  <!-- <ItemGroup>
+    <ProjectReference Include="..\Assignment4.Core\Assignment4.Core.csproj" />
+  </ItemGroup> -->
 
   <ItemGroup>
     <ProjectReference Include="..\Assignment4.Core\Assignment4.Core.csproj" />
+    <!-- <ProjectReference Include="..\Assignment4.Entities\Assignment4.csproj" /> -->
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityframeworkCore.SqlServer" Version="5.0.10" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
   </ItemGroup>
 
 </Project>

@@ -4,7 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
+  <!-- <ItemGroup>
     <ProjectReference Include="..\Assignment4.Entities\Assignment4.Entities.csproj" />
-  </ItemGroup>
+  </ItemGroup> -->
 </Project>

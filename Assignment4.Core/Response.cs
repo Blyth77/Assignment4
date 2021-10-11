@@ -8,6 +8,7 @@ namespace Assignment4.Core
         Deleted,
         NotFound,
         BadRequest,
-        Conflict
+        Conflict,
+        Read
     }
 }
